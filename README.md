@@ -40,7 +40,7 @@ simpleController.setRequests([
         url: '/',
         type: 'GET',
         fn: (req, res) => {
-            res.send(SimpleService.example());
+            res.send(SimpleService.example);
         }
     }
 ]);
