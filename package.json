@@ -1,7 +1,7 @@
 {
   "name": "expring",
-  "version": "1.0.1",
-  "description": "",
+  "version": "1.0.2-alpha",
+  "description": "Express superstructure",
   "main": "index.js",
   "dependencies": {
     "express": "^4.15.3"
@@ -14,7 +14,8 @@
     "type": "git",
     "url": "git+https://github.com/octav47/expring.git"
   },
-  "author": "",
+  "keywords": ["expring", "express", "spring"],
+  "author": "Kir Tribunsky",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/octav47/expring/issues"
