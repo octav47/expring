@@ -1,5 +1,7 @@
 ## expring
 
+<img src="http://octav47.github.io/img/Expring.png">
+
 Example
 
 SimpleService.js:
