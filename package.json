@@ -4,7 +4,8 @@
   "description": "Express superstructure",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.15.3"
+    "express": "^4.15.3",
+    "log4js": "^1.1.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -14,7 +15,11 @@
     "type": "git",
     "url": "git+https://github.com/octav47/expring.git"
   },
-  "keywords": ["expring", "express", "spring"],
+  "keywords": [
+    "expring",
+    "express",
+    "spring"
+  ],
   "author": "Kir Tribunsky",
   "license": "ISC",
   "bugs": {

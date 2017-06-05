@@ -64,5 +64,7 @@ app.listen(9001);
 
 You can use built-in Services:
 ```js
-let LogService = expring.Services.LogService;
+let LogService = expring.Services.LogService; // uses log4js
+
+// TODO more built-in Services
 ```
