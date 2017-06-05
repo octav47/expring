@@ -61,3 +61,8 @@ SimpleController.init(app);
 
 app.listen(9001);
 ```
+
+You can use built-in Services:
+```js
+let LogService = expring.Services.LogService;
+```

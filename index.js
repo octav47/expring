@@ -67,4 +67,11 @@ class Service {
 express.Controller = Controller;
 express.Service = Service;
 
+// ===== import built-in Services
+let LogService = require('./built-in/services/LogService.js')(express);
+
+express.Services = {};
+express.Services.LogService = LogService;
+// =====
+
 module.exports = express;

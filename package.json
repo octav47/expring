@@ -1,6 +1,6 @@
 {
   "name": "expring",
-  "version": "1.0.2-alpha",
+  "version": "1.0.3-alpha",
   "description": "Express superstructure",
   "main": "index.js",
   "dependencies": {
