@@ -1,9 +1,17 @@
 const express = require('express');
 
+express.Controllers = {};
+
 class Controller {
 	constructor(name) {
 		this.name = name;
 		this.requests = [];
+
+		if (express.Controllers[name]) {
+			throw `${name} is already exists!`;
+		} else {
+			express.Controllers[name] = this;
+		}
 	}
 
 	addRequest(request) {
@@ -45,10 +53,18 @@ class Controller {
 	}
 }
 
+express.Services = {};
+
 class Service {
 	constructor(name) {
 		this.name = name;
 		this.methods = [];
+
+		if (express.Services[name]) {
+			throw `${name} is already exists!`;
+		} else {
+			express.Services[name] = this;
+		}
 	}
 
 	addMethod(method) {
@@ -70,7 +86,6 @@ express.Service = Service;
 // ===== import built-in Services
 let LogService = require('./built-in/services/LogService.js')(express);
 
-express.Services = {};
 express.Services.LogService = LogService;
 // =====
 
